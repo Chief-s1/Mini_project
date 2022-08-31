@@ -1,1 +1,2 @@
-# Mini_project
+# Mini_project 
+This repo contains all the mini projects done 
