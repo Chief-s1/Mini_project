@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country</title>
+</head>
+
+<style>
+  .capital{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    color:red;
+  }
+</style>
+
+
+<body>
+  <h1>Country</h1>
+  <label for="count">Select Country</label>
+  <Select id="count" onchange="cap()">
+    <option value="">--Select--</option>
+    <option value="ind">India</option>
+    <option value="usa">Usa</option>
+    <option value="jap">Japan</option>
+  </Select>
+
+  <p id="capital"></p>
+
+  <script>
+    function cap()
+    {
+      var cname=document.getElementById("count").value;
+      var capit="<span class='capital'>Delhi</span>";
+
+      if(cname==="ind"){
+   //   capital.innerHTML = "Capital: <span class='capital'>DElhi</span>";
+        document.getElementById("capital").innerHTML=capit;
+  }
+      else if(cname==="usa")
+      capital.innerHTML = "Capital: <span class='capital'>WDC</span>";
+   
+      else if(cname==="jap")
+      capital.innerHTML = "Capital: <span class='capital'>Tokyo</span>";
+  
+      
+    }
+  </script>
+
+
+</body>
+</html>

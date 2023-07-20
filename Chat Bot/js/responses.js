@@ -57,7 +57,7 @@ function getBotResponse(content) {
        window.open("https://www.google.co.in/search?q="+s);
     }
     
-	 if(content.includes("play")){
+	 if(content.includes("song")){
         s=content.slice(4); 
         tspch("Opening Youtube");
         wbln=window.open("https://www.youtube.com/search?q="+s);
@@ -88,6 +88,35 @@ function getBotResponse(content) {
         s=content.slice(4);
         window.open("https://www.google.com/maps/search/"+s);
     }
+
+    if(content.includes("play game")){
+        tspch("Which Game do you want to play ?");
+        return("1.Rock paper Scissor<br>2.snakee");
+    }
+    
+    if(content.includes("snakee")){
+        tspch("Opening Snakee");
+        window.open("games/Snakee/index.html");
+        return("Opening Snake");
+    }
+
+    if(content.includes("rock paper scissor")){
+        tspch("Opening Rock Paper Scissor");
+        window.open("games/rps/index.html");
+        return("Opening Rock Paper Scissor");
+    }
+
+    if(content.includes("pig game")){
+        tspch("Opening pig game");
+        window.open("games/pigGame/index.html");
+        return("Opening pig game");
+    }
+    if(content.includes("number guess")){
+        tspch("Opening Number Guess");
+        window.open("games/numguess/index.html");
+        return("Opening Number Guess");
+    }
+    
 
 
 
