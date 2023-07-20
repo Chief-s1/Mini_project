@@ -45,6 +45,11 @@ firstBotMessage();
 
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
+
+    if(!botResponse){
+    botResponse="Sorry I Dont know about That";
+    tspch(botResponse);
+    } 
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
